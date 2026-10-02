@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool</title>
+    <link rel="stylesheet" href="/CSS_Docs/styles.css">
+    <link rel="stylesheet" href="/CSS_Docs/tool.css">
+</head>
+<body>
+
+    <main class="tool-card">
+        <h1>WiFi Placement Tool</h1>
+
+        <div class="field">
+            <label for="cars">Choose a Machine:</label>
+            <select name="cars" id="cars">
+                <option value="Location 1">Press</option>
+                <option value="Location 2">Spray Booth</option>
+                <option value="Location 3">Beam Saw</option>
+                <option value="Location 4">CNC</option>
+                <option value="Location 5">Panel Saw</option>
+                <option value="Location 6">CNC 2</option>
+                <option value="Location 7">Planer-Sander</option>
+                <option value="Location 8">Gantry CNC machine</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="Band">Choose a band:</label>
+            <select name="Band" id="Band">
+                <option value="2.4GHz">2.4GHz</option>
+                <option value="5GHz">5GHz</option>
+                <option value="6GHz">6GHz</option>
+                <option value="2.4/5GHz">2.4/5GHz</option>
+                <option value="2.4/6GHz">2.4/6GHz</option>
+                <option value="5/6GHz">5/6GHz</option>
+                <option value="2.4/5/6GHz">2.4/5/6GHz</option>
+
+        
+                
+            </select>
+        </div>
+        <div class="speed-box">
+         Your wifi throughput speed will be around:
+        <span id="speed-value">__</span> Mbps
+        </div>
+    </main>
+
+    <script src="/JS Docs/nav.js"></script>
+</body>
+</html>
