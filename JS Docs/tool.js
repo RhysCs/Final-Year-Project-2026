@@ -16,3 +16,13 @@ window.addEventListener("click", function(event) {
     }
   }
 });
+
+const dropdown = document.getElementById("my-dropdown");
+
+dropdownBtn.addEventListener("change", function () {
+  const selected = dropdownBtn.value;                           // the option's value="" attribute
+  const selectedText = dropdownBtn.options[dropdownBtn.selectedIndex].text;  // the text the user sees
+  console.log(selected, selectedText);
+});
+
+if (dropdownBtn.value = "")
