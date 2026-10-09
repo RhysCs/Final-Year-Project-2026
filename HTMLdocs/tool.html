@@ -27,6 +27,14 @@
         </div>
 
         <div class="field">
+            <label for="State">Machine state:</label>
+            <select name="State" id="State">
+                <option value="Off">Off</option>
+                <option value="On">On</option>
+            </select>
+        </div>
+
+        <div class="field">
             <label for="Band">Choose a band:</label>
             <select name="Band" id="Band">
                 <option value="2.4GHz">2.4GHz</option>
@@ -36,17 +44,18 @@
                 <option value="2.4/6GHz">2.4/6GHz</option>
                 <option value="5/6GHz">5/6GHz</option>
                 <option value="2.4/5/6GHz">2.4/5/6GHz</option>
-
-        
-                
             </select>
         </div>
+
         <div class="speed-box">
-         Your wifi throughput speed will be around:
-        <span id="speed-value">__</span> Mbps
+            Your wifi throughput speed will be around:
+            <span id="speed-value">__</span> Mbps
         </div>
+
+        <div id="recommendation"></div>
     </main>
 
     <script src="/JS Docs/nav.js"></script>
+    <script src="/JS Docs/tool.js"></script>
 </body>
 </html>
