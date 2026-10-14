@@ -1,15 +1,12 @@
-// Shared navigation bar. Edit the links here once and every page updates.
+// Shared navigation bar
 (function () {
     const links = [
         { href: "index.html", label: "Home" },
-        { href: "wifi.html", label: "WiFi" },
-        { href: "location.html", label: "Test Location" },
+        { href: "location.html", label: "Our Locations" },
         { href: "tool.html", label: "Tool" },
-        { href: "description.html", label: "Description" }
+        { href: "description.html", label: "FAQ" }
     ];
 
-    // Default nav styles. :where() keeps specificity at zero, so any
-    // .navbar rules in your own CSS will override these.
     const css =
         ":where(.navbar){display:flex;flex-wrap:wrap;gap:8px;align-items:center;" +
         "padding:12px 24px;background:#1f2937;}" +
@@ -18,10 +15,8 @@
         ":where(.navbar a:hover){background:rgba(255,255,255,.15);}" +
         ":where(.navbar a.active){background:rgba(255,255,255,.25);font-weight:600;}";
 
+    // Draw the nav    
     function insertNav() {
-        // Avoid a duplicate if a page still has its own hard-coded nav
-        const old = document.querySelector("nav.navbar");
-        if (old) old.remove();
 
         const style = document.createElement("style");
         style.textContent = css;

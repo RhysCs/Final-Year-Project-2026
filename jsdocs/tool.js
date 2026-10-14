@@ -1,7 +1,4 @@
 // WiFi Placement Tool
-// Throughput in Mbps, by machine -> state ("Off" / "On") -> band.
-// Keys must match the option values in your HTML.
-// These numbers are PLACEHOLDERS - replace them with your measured results.
 const throughput = {
   "Location 1": { // Press
     "On": { "2.4GHz": 331.321, "5GHz": 846.148, "6GHz": 1299.858, "2.4/5GHz": 918.468, "2.4/6GHz": 1484.474, "5/6GHz": 640.022, "2.4/5/6GHz": 827.706 },
@@ -37,7 +34,7 @@ const throughput = {
   }
 };
 
-const machineSelect = document.getElementById("cars");
+const machineSelect = document.getElementById("MachineType");
 const stateSelect = document.getElementById("State");
 const bandSelect = document.getElementById("Band");
 const speedValue = document.getElementById("speed-value");
