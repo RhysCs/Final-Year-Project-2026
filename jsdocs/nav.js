@@ -4,7 +4,7 @@
         { href: "index.html", label: "Home" },
         { href: "location.html", label: "Our Locations" },
         { href: "tool.html", label: "Tool" },
-        { href: "faqs.html", label: "FAQ" }
+        { href: "summarypage.html", label: "Our Project" }
     ];
 
     const css =

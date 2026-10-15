@@ -9,8 +9,8 @@ p {
     max-width: 900px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 side by side */
-    gap: 16px;                              /* 4 rows of 2 = 8 images */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px;                              
 }
 
 .gallery img {
@@ -22,12 +22,12 @@ p {
 }
 
 .gallery figure {
-    margin: 0;               /* removes the browser's default figure indent */
+    margin: 0;              
 }
 
 .gallery figcaption {
     margin-top: 8px;
     font-size: 0.9rem;
     color: #555;
-    text-align: center;      /* use left if you prefer */
+    text-align: center;    
 }

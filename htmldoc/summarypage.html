@@ -1,0 +1,40 @@
+<script src="../jsdocs/nav.js"></script>
+<link rel="stylesheet" href="../cssdocs/terms.css">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Summary of Results</title>
+</head>
+<body>
+    <main>
+    <h1>Construct – An Industrial Wi-Fi Placement Tool: Summary of Results</h1>
+    <div class="details"></div>
+        
+    <h2>What We Built</h2>
+    <p>We developed an online wi-fi placement tool that can produce to you the most efficient wi-fi throughput speed in an industrial building. When implementing wi-fi devices in your industrial environment, there will be noise emitted by industrial machinery and other factors that may interfere with your wi-fi signals, thus providing less throughput speed. Consider the tool as detecting the "sweet spot" for wi-fi throughput, showing where the connection is strong providing high throughput speed, and where it might be weak showing low throughput speed according to machinery states on or off.</p>
+
+    <h2>Best-Fit Propagation Model</h2>
+    <p>By collecting data across various Wi-Fi 7 frequency bands and MLO (Multi-Link Operation) combinations at eight test locations within a factory, the Free-Space Path Loss (FSPL) Model was identified as the best-fit propagation model among the three models evaluated (Two-Ray Ground Reflection, Log-Distance, Free-Space). Reason being that:</p>
+    <ul>
+      <li>The predicted RSS values have the smallest MAE difference to actual data measured.</li>
+      <li>Lack multi-distance test points; log-distance model cannot demonstrate its theoretical advantage. Log-distance degenerates completely into a free space model.</li>
+    </ul>
+
+    <h2>Our Test Results</h2>
+    <p>In 2.4 GHz and 5GHz frequency bands, free space model shows the least differences (with a MAE of 0.9-1.6dB), showing a high level of accuracy. However, the 6GHz showed an increase in differences (with a mean absolute error of 11.56 to 12.6). That's because of the 6GHz band's high sensitivity in physical obstructions.</p>
+    <ul>
+      <li>For Single-Band Performance, the 6GHz band achieved the highest recorded throughput ranging from 1,300–1,498 Mbps despite showing less favorable RSS values compared to the lower frequency bands. Whereas 2.4 and 5Ghz Bands deliver steady mid-range and lower stable speeds. There is no significant difference between an active industrial machinery environment and a static industrial machinery environment, with a negligible (&lt;5%) impact over all bands.</li>
+      <li>Best MLO Performance: The 2.4+6GHz MLO combination has the best performance, providing stable high throughput by aggregating the 6 GHz band with 2.4 GHz.</li>
+      <li>MLO Combinations: 2.4+5GHz, 5+6 GHz, and tri-band combinations failed to exceed single-band 6 GHz speeds due to in-device coexistence interference and fallback behavior.</li>
+    </ul>
+
+    <h2>Outcome &amp; Practical Value</h2>
+    <p>This project demonstrates how field measurements and propagation modelling can be combined in an online tool specific for wi-fi planning capabilities of industrial organizations in the construction space. The project underlines the utilization of 2.4GHz, 5GHz, 6GHz, and MLO Wi-Fi Band Configurations for testing to establish a practical starting point for network engineers to assess potential wireless network configuration decisions and identifying locations that may require further investigation. The tool can also assist efficient access point implementation, follow-up site surveys. Overall, the project provides a foundation for more informed industrial wi-fi planning.</p>
+  </main>
+
+  <script src="nav.js"></script>   <!-- your shared nav and footer script -->
+</body>
+</html>
