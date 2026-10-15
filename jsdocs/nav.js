@@ -52,11 +52,11 @@
     ];
 
     // Footer styles
-    const css =
+    const css2 =
         ":where(body){min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;}" +
         ":where(.site-footer){display:flex;flex-wrap:wrap;justify-content:space-between;" +
         "align-items:center;gap:12px 24px;padding:20px 24px;margin-top:auto;" +
-        "background:#f5f5f0;color:#1f2937;border-top:1px solid #ffffff;" +
+        "background: #ebebeb;color: #1f2937 ;border-top:1px solid #dbdada;" +
         "font-family:system-ui,sans-serif;font-size:0.95rem;}" +
         ":where(.site-footer a){color:#1f2937;text-decoration:none;}" +
         ":where(.site-footer a:hover){text-decoration:underline;}" +
@@ -68,7 +68,7 @@
         if (old) old.remove();
 
         const style = document.createElement("style");
-        style.textContent = css;
+        style.textContent = css2;
         document.head.appendChild(style);
 
         const html =
