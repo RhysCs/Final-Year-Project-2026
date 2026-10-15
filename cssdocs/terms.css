@@ -1,0 +1,23 @@
+main {
+    max-width: 600px;
+    margin: 40px auto;          /* centres the card, with space above and below */
+    padding: 32px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+main h1 {
+    text-align: center;
+    border-bottom: none;        /* removes the line under the heading */
+    margin-top: 0;
+}
+
+main p.qa {
+    text-align: left;           /* text stays left-aligned inside each box */
+
+}
+
+main p.qa strong {
+    display: block;             /* answer starts on its own line under the question */
+    margin-bottom: 4px;
+}
